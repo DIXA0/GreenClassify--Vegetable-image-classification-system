@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenClassify - Vegetable Image Classification</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to GreenClassify</h1>
+      <p>Deep Learning-Based Vegetable Image Classification</p>
+      <p>
+        This project uses a Convolutional Neural Network (CNN) to classify
+        vegetable images into 15 categories.
+      </p>
+      <p>Upload an image of a vegetable to get the prediction!</p>
+      <a href="{{ url_for('predict') }}" class="btn">Go to Prediction</a>
+    </div>
+  </body>
+</html>

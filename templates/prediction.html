@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction - GreenClassify</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vegetable Image Classification</h1>
+      <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload an image:</label>
+        <input type="file" name="file" id="file" required />
+        <button type="submit" class="btn">Predict</button>
+      </form>
+      {% if prediction %}
+      <div class="result">
+        <h2>Prediction Result</h2>
+        <p>Vegetable is <strong>{{ prediction }}</strong></p>
+      </div>
+      {% endif %}
+      <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

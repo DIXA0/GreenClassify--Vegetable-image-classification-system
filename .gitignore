@@ -1,0 +1,4 @@
+__pycache__/
+uploads/
+*.h5
+.env
