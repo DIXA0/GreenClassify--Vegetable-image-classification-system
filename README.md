@@ -29,4 +29,4 @@ Vegetable Images Dataset (Kaggle)
 
 ## Author
 
-Shivraj Patil
+Diksha Mote
